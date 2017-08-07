@@ -1,0 +1,53 @@
+.headerBar {
+    height: 7vh;
+    width: 100%;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+}
+
+.headerLogo {
+    display: inline-block;
+    height: 100%;
+    width: 40%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+.headerLinks {
+    display: inline-block;
+    height: 100%;
+    width: 60%;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+}
+
+.headerLinks ul {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    vertical-align: middle;
+}
+
+.headerLinks ul li {
+    display: table;
+    vertical-align: middle;
+    height: 100%;
+    text-align: center;
+    width: 20%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    font-family: cursive;
+}
+
+.headerLinks ul li a {
+    cursor: crosshair;
+    display: table-cell;
+    vertical-align: middle;
+}

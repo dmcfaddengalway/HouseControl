@@ -1,0 +1,53 @@
+.footerBar {
+    height: 7vh;
+    width: 100%;
+    border-top: 1px solid black;
+    position: fixed;
+    bottom: 0;
+}
+
+.footerLogo {
+    display: inline-block;
+    height: 100%;
+    width: 60%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+.footerLinks {
+    display: inline-block;
+    height: 100%;
+    width: 40%;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+}
+
+.footerLinks ul {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    vertical-align: middle;
+}
+
+.footerLinks ul li {
+    display: table;
+    vertical-align: middle;
+    height: 100%;
+    text-align: center;
+    width: 30%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    font-family: cursive;
+}
+
+.footerLinks ul li a {
+    cursor: crosshair;
+    display: table-cell;
+    vertical-align: middle;
+}
