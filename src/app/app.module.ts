@@ -6,8 +6,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
-import { HeaderBarComponent } from './header-bar/header-bar.component';
-import { FooterBarComponent } from './footer-bar/footer-bar.component';
+import { HeaderBarComponent } from './Shared/header-bar/header-bar.component';
+import { FooterBarComponent } from './Shared/footer-bar/footer-bar.component';
 
 @NgModule({
   declarations: [
@@ -23,4 +23,5 @@ import { FooterBarComponent } from './footer-bar/footer-bar.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

@@ -1,9 +1,11 @@
 .headerBar {
     height: 7vh;
     width: 100%;
-    border-bottom: 1px solid black;
+    box-shadow: 0px 1px 6px 0.5px rgb(0, 0, 0);
     position: fixed;
     top: 0;
+    background-color: rgba(136, 73, 143, 1);
+    display: block;
 }
 
 .headerLogo {
@@ -49,5 +51,12 @@
 .headerLinks ul li a {
     cursor: crosshair;
     display: table-cell;
+    text-decoration: none;
     vertical-align: middle;
+    color: white;
+    font-size: 20px;
+}
+
+.headerLinks ul li a:hover {
+    background-color: #4B284E;
 }
