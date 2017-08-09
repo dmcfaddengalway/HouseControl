@@ -9,12 +9,20 @@
 }
 
 .headerLogo {
-    display: inline-block;
+    display: table;
     height: 100%;
     width: 40%;
     margin: 0px;
     padding: 0px;
     float: left;
+}
+
+.headerLogo h1 {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 50px;
+    color: white;
+    font-family: 'RubikBold';
 }
 
 .headerLinks {
@@ -54,7 +62,10 @@
     text-decoration: none;
     vertical-align: middle;
     color: white;
+    font-family: 'TrirongRegular';
     font-size: 20px;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
 }
 
 .headerLinks ul li a:hover {

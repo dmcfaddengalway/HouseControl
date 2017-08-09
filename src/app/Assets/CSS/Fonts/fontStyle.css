@@ -1,0 +1,147 @@
+/*------------------
+     RUBIK FONTS
+--------------------*/
+
+@font-face {
+    font-family: RubikBlack;
+    src: url(Rubik/Rubik-Black.ttf);
+}
+
+@font-face {
+    font-family: RubikBlackItalic;
+    src: url(Rubik/Rubik-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: RubikBold;
+    src: url(Rubik/Rubik-Bold.ttf);
+}
+
+@font-face {
+    font-family: RubikBoldItalic;
+    src: url(Rubik/Rubik-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: RubikItalic;
+    src: url(Rubik/Rubik-Italic.ttf);
+}
+
+@font-face {
+    font-family: RubikLight;
+    src: url(Rubik/Rubik-Italic.ttf);
+}
+
+@font-face {
+    font-family: RubikLightItalic;
+    src: url(Rubik/Rubik-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: RubikMedium;
+    src: url(Rubik/Rubik-Medium.ttf);
+}
+
+@font-face {
+    font-family: RubikMediumItalic;
+    src: url(Rubik/Rubik-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: RubikRegular;
+    src: url(Rubik/Rubik-Regular.ttf);
+}
+
+/*------------------
+    TRIRONG FONTS
+--------------------*/
+
+@font-face {
+    font-family: TrirongBlack;
+    src: url(Trirong/Trirong-Black.ttf);
+}
+
+@font-face {
+    font-family: TrirongBlackItalic;
+    src: url(Trirong/Trirong-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: TrirongBold;
+    src: url(Trirong/Trirong-Bold.ttf);
+}
+
+@font-face {
+    font-family: TrirongBoldItalic;
+    src: url(Trirong/Trirong-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: TrirongExtraBold;
+    src: url(Trirong/Trirong-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: TrirongExtraBoldItalic;
+    src: url(Trirong/Trirong-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: TrirongExtraLight;
+    src: url(Trirong/Trirong-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: TrirongExtraLightItalic;
+    src: url(Trirong/Trirong-ExtraLightItalic.ttf);
+}
+
+@font-face {
+    font-family: TrirongItalic;
+    src: url(Trirong/Trirong-Italic.ttf);
+}
+
+@font-face {
+    font-family: TrirongLight;
+    src: url(Trirong/Trirong-Light.ttf);
+}
+
+@font-face {
+    font-family: TrirongLightItalic;
+    src: url(Trirong/Trirong-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: TrirongMedium;
+    src: url(Trirong/Trirong-Medium.ttf);
+}
+
+@font-face {
+    font-family: TrirongMediumItalic;
+    src: url(Trirong/Trirong-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: TrirongRegular;
+    src: url(Trirong/Trirong-Regular.ttf);
+}
+
+@font-face {
+    font-family: TrirongSemiBold;
+    src: url(Trirong/Trirong-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: TrirongSemiBoldItalic;
+    src: url(Trirong/Trirong-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: TrirongThin;
+    src: url(Trirong/Trirong-Thin.ttf);
+}
+
+@font-face {
+    font-family: TrirongThinItalic;
+    src: url(Trirong/Trirong-ThinItalic.ttf);
+}

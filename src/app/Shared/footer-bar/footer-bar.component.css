@@ -8,12 +8,20 @@
 }
 
 .footerLogo {
-    display: inline-block;
+    display: table;
     height: 100%;
     width: 60%;
     margin: 0px;
     padding: 0px;
     float: left;
+}
+
+.footerLogo h1 {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 50px;
+    color: white;
+    font-family: 'RubikBold';
 }
 
 .footerLinks {
@@ -53,7 +61,10 @@
     text-decoration: none;
     vertical-align: middle;
     color: white;
+    font-family: 'TrirongRegular';
     font-size: 16px;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
 }
 
 .footerLinks ul li a:hover {
