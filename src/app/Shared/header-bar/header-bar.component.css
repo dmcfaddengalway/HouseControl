@@ -25,6 +25,11 @@
     font-family: 'RubikBold';
 }
 
+.headerLogo h1 a {
+    color: white;
+    text-decoration: none;
+}
+
 .headerLinks {
     display: inline-block;
     height: 100%;
