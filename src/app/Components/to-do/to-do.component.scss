@@ -1,0 +1,59 @@
+.toDoListContainer {
+    width: 100%;
+    margin: auto 0;
+
+    .formContainer {
+        width: 100%;
+
+        .formBox {
+
+            input {
+                padding: 20px 25px;
+                font-size: 20px;
+            }
+
+            button {
+                width: 150px;
+                padding: 12px 30px;
+                color: white;
+                background-color: #944654;
+                border: none;
+                font-size: 20px;
+                font-family: 'TrirongThin';
+                letter-spacing: 1px;
+
+                &:hover {
+                    background-color: darken(#944654, 10%);
+                    cursor: pointer;
+                }
+            }
+
+            .segments {
+                display: inline;
+                padding: 12px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                input[type="radio"] {
+                    display: none;
+                }
+
+                label {
+                    border: 1px solid silver;
+                    padding: 5px 24px;
+                    margin-right: -5px;
+                    background: #ddd;
+                    cursor: pointer;
+                }
+
+                input:checked + label {
+                    border: inset 1px silver;
+                    background: #aaa;
+                }
+            }
+
+        }
+    }
+}

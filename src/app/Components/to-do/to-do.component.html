@@ -1,3 +1,23 @@
-<h1>
-  to-do works!
-</h1>
+<div class="toDoListContainer">
+    <div class="formContainer">
+        <div class="formBox">
+            <form>
+                <input type="text" placeholder="Add task..." size="60">
+                <ul class="segments">
+                    <input type="radio" name="box1" value="!" id="segLow">
+                    <label for="segLow">!</label>
+                    <input type="radio" name="box1" value="!!" id="segMedium">
+                    <label for="segMedium">!!</label>
+                    <input type="radio" name="box1" value="!!!" id="segHigh">
+                    <label for="segHigh">!!!</label>
+                </ul>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+    </div>
+
+    <div ng-repeat="toDo in toDoList">
+        <input type="checkbox" ng-model="toDo.done"><span ng-bind="x.toDoText"></span>
+        <button ng-click="remove()">X</button>
+    </div>
+</div>
