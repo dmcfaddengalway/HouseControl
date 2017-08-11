@@ -21,6 +21,8 @@
                 font-size: 20px;
                 font-family: 'TrirongThin';
                 letter-spacing: 1px;
+                -webkit-transition: background-color 1s;
+                transition: background-color 1s;
 
                 &:hover {
                     background-color: darken(#944654, 10%);

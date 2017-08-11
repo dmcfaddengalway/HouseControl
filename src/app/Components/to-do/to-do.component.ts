@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToDoComponent implements OnInit {
 
-  constructor() { }
+    task: string;
+    toDoList = [];
 
-  ngOnInit() {
-  }
+    constructor() {
+
+    }
+
+    ngOnInit() {
+
+    }
+
+    addToDo() {
+        this.toDoList.push({name: this.task});
+        //console.log('Added task: ', this.task); TESTS IF VALUE IS GOTTEN FROM INPUT
+        this.task = '';
+    }
+
+    removeToDo() {
+        console.log("Removed: ", this.task);
+    }
 
 }
