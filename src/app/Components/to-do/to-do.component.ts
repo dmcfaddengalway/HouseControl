@@ -24,7 +24,8 @@ export class ToDoComponent implements OnInit {
         this.task = '';
     }
 
-    removeToDo() {
+    removeToDo(index) {
+        this.toDoList.splice(index, 1);
         console.log("Removed: ", this.task);
     }
 

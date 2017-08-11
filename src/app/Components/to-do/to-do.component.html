@@ -16,8 +16,8 @@
         </div>
     </div>
 
-    <div *ngFor="let toDo of toDoList">
+    <div *ngFor="let toDo of toDoList; let i=index">
         <input type="checkbox" ng-model="toDo.done"><span>{{ toDo.name }}</span>
-        <button type="submit" (click)="removeToDo()">X</button>
+        <button type="submit" (click)="removeToDo(i)">X</button>
     </div>
 </div>
