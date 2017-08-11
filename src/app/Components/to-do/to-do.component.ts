@@ -9,6 +9,7 @@ export class ToDoComponent implements OnInit {
 
     task: string;
     toDoList = [];
+    priority: number;
 
     constructor() {
 
@@ -19,9 +20,12 @@ export class ToDoComponent implements OnInit {
     }
 
     addToDo() {
-        this.toDoList.push({name: this.task});
-        //console.log('Added task: ', this.task); TESTS IF VALUE IS GOTTEN FROM INPUT
+        this.toDoList.push({name: this.task, completed: false, priority: this.priority});
+        //console.log('Added task: ', this.task);
+        //console.log('Status: ', this.completed);
+        //console.log('Priority:', this.priority);
         this.task = '';
+        this.priority = null;
     }
 
     removeToDo(index) {

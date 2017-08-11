@@ -2,13 +2,13 @@
     <div class="formContainer">
         <div class="formBox">
             <form>
-                <input type="text" placeholder="Add task..." size="60" [(ngModel)]="task" [ngModelOptions]="{standalone: true}">
+                <input type="text" placeholder="Add task..." size="40" [(ngModel)]="task" [ngModelOptions]="{standalone: true}">
                 <ul class="segments">
-                    <input type="radio" name="box1" value="!" id="segLow">
+                    <input type="radio" name="box1" value="!" id="segLow" [(ngModel)]="priority">
                     <label for="segLow">!</label>
-                    <input type="radio" name="box1" value="!!" id="segMedium">
+                    <input type="radio" name="box1" value="!!" id="segMedium" [(ngModel)]="priority">
                     <label for="segMedium">!!</label>
-                    <input type="radio" name="box1" value="!!!" id="segHigh">
+                    <input type="radio" name="box1" value="!!!" id="segHigh" [(ngModel)]="priority">
                     <label for="segHigh">!!!</label>
                 </ul>
                 <button type="submit" (click)="addToDo()">Add Task</button>
@@ -17,7 +17,7 @@
     </div>
 
     <div *ngFor="let toDo of toDoList; let i=index">
-        <input type="checkbox" ng-model="toDo.done"><span>{{ toDo.name }}</span>
+        <span>{{ toDo.priority }} {{ toDo.name }}</span>
         <button type="submit" (click)="removeToDo(i)">X</button>
     </div>
 </div>
