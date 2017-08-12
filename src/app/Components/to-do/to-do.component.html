@@ -18,13 +18,22 @@
 
     <div class="listContainer">
         <div class="listBox">
-            <div *ngFor="let toDo of toDoList; let i=index" class="listItem">
-                <div>
-                    <div class="priority">{{ toDo.priority }}</div>
-                    <div class="task">{{ toDo.name }}</div>
-                    <div class="done"><button type="submit" (click)="removeToDo(i)">Done</button></div>
-                </div>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Priority</td>
+                        <td>Task</td>
+                        <td>Status</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let toDo of toDoList; let i=index" class="listItem">
+                        <td class="priority">{{ toDo.priority }}</td>
+                        <td class="task">{{ toDo.name }}</td>
+                        <td class="done"><button type="submit" (click)="removeToDo(i)">Done</button></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
