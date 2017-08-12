@@ -33,4 +33,12 @@ export class ToDoComponent implements OnInit {
         console.log("Removed: ", this.task);
     }
 
+    sortPriority() {
+        console.log("Sorted by priority");
+    }
+
+    sortAlphabeticalTask() {
+        console.log("Sorted by alphabetical task");
+    }
+
 }
