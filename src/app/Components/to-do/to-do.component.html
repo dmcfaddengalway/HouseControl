@@ -21,16 +21,16 @@
             <table>
                 <thead>
                     <tr>
-                        <td>Priority</td>
-                        <td>Task</td>
-                        <td>Status</td>
+                        <td class="priorityHead">Priority</td>
+                        <td class="taskHead">Task</td>
+                        <td class="statusHead">Status</td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let toDo of toDoList; let i=index" class="listItem">
                         <td class="priority">{{ toDo.priority }}</td>
                         <td class="task">{{ toDo.name }}</td>
-                        <td class="done"><button type="submit" (click)="removeToDo(i)">Done</button></td>
+                        <td class="status"><button type="submit" (click)="removeToDo(i)">Done</button></td>
                     </tr>
                 </tbody>
             </table>
