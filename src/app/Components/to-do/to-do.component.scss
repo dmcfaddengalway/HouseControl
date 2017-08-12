@@ -1,11 +1,13 @@
 .toDoListContainer {
     width: 100%;
-    margin: auto 0;
 
     .formContainer {
         width: 100%;
+        margin: 120px auto;
 
         .formBox {
+            width: 70%;
+            margin: 0 auto;
 
             input {
                 padding: 20px 20px;
@@ -47,13 +49,15 @@
                     border: 1px solid silver;
                     padding: 5px 24px;
                     margin-right: -5px;
-                    background: #ddd;
+                    background: transparent;
                     cursor: pointer;
+                    border-radius: 2px;
+                    -webkit-transition: background-color 1s;
+                    transition: background-color 1s;
                 }
 
                 input:checked + label {
-                    border: inset 1px silver;
-                    background: #aaa;
+                    background: #A6F4DC;
                 }
             }
 
@@ -61,20 +65,43 @@
     }
 
     .listItem {
-        background-color: blue;
         height: 100%;
         width: 100%;
 
-                span {
-                    font-size: 16px;
-                    font-family: 'RubikMedium';
-                    color: white;
-                }
+        ul {
+            list-style: none;
+            display: inline-block;
+            color: white;
+            font-family: 'RubikMedium';
+            font-size: 24px;
+            border: 1px solid gray;
+            border-radius: 2px;
+            padding: 0px;
+            margin: 0px;
+
+            &:first-child() {
+                width: 15%;
+                background-color: orange;
+            }
+
+            &:nth-child(2) {
+                width: 70%;
+            }
+
+            &:nth-child(3) {
+                width: 15%;
+            }
+
+            li {
+                display: inline-block;
+                padding: 0px;
+                width: 178px;
 
                 button {
                     width: 75px;
                     padding: 5px 7px;
                     border: none;
+                    display: inline-block;
                     background-color: #944654;
                     color: white;
                     font-family: 'TrirongLight';
@@ -86,6 +113,17 @@
                     &:hover {
                         background-color: darken(#944654, 10%);
                     }
+            }
+
+        }
+
+                span {
+                    font-size: 16px;
+                    font-family: 'RubikMedium';
+                    color: white;
+                }
+
+
                 }
             }
 }

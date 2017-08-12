@@ -17,8 +17,11 @@
     </div>
 
     <div *ngFor="let toDo of toDoList; let i=index" class="listItem">
-        <span>{{ toDo.priority }} | {{ toDo.name }}</span>
-        <button type="submit" (click)="removeToDo(i)">Delete</button>
+        <ul>
+            <li>{{ toDo.priority }}</li>
+            <li>{{ toDo.name }}</li>
+            <li><button type="submit" (click)="removeToDo(i)">Done</button></li>
+        </ul>
     </div>
 
 </div>
