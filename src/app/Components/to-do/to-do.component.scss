@@ -59,7 +59,7 @@
                 }
 
                 input:checked + label {
-                    background: #A6F4DC;
+                    background: #AF90A9;
                 }
             }
 
@@ -76,6 +76,7 @@
             table {
                 width: 100%;
                 border-collapse: collapse;
+                border-radius: 2px;
 
                 thead {
                     width: 100%;
@@ -110,9 +111,12 @@
                         background-color: white;
 
                         &:nth-child(odd) {
-                            background-color: gray;
+                            background-color: transparent;
                         }
 
+                        &:nth-child(even) {
+                            background-color: rgba(0, 0, 0, 0.05);
+                        }
 
                         .priority {
                             text-align: center;
