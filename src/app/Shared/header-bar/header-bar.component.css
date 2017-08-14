@@ -25,6 +25,11 @@
     font-family: 'RubikBold';
 }
 
+.headerLogo h1 a {
+    color: white;
+    text-decoration: none;
+}
+
 .headerLinks {
     display: inline-block;
     height: 100%;
@@ -57,7 +62,7 @@
 }
 
 .headerLinks ul li a {
-    cursor: crosshair;
+    cursor: pointer;
     display: table-cell;
     text-decoration: none;
     vertical-align: middle;

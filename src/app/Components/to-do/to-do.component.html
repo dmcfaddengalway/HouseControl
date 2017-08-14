@@ -1,3 +1,40 @@
-<p>
-  to-do works!
-</p>
+<div class="toDoListContainer">
+    <div class="formContainer">
+        <div class="formBox">
+            <form>
+                <input type="text" placeholder="Add task..." size="40" [(ngModel)]="task" [ngModelOptions]="{standalone: true}" autofocus required>
+                <ul class="segments">
+                    <input type="radio" name="box1" value="!" id="segLow" [(ngModel)]="priority">
+                    <label for="segLow">!</label>
+                    <input type="radio" name="box1" value="!!" id="segMedium" [(ngModel)]="priority">
+                    <label for="segMedium">!!</label>
+                    <input type="radio" name="box1" value="!!!" id="segHigh" [(ngModel)]="priority">
+                    <label for="segHigh">!!!</label>
+                </ul>
+                <button type="submit" (click)="addToDo()">Add Task</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="listContainer">
+        <div class="listBox">
+            <table>
+                <thead>
+                    <tr>
+                        <td class="priorityHead" (click)="sortPriority()">Priority</td>
+                        <td class="taskHead" (click)="sortAlphabeticalTask()">Task</td>
+                        <td class="statusHead">Status</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let toDo of toDoList; let i=index" class="listItem">
+                        <td class="priority">{{ toDo.priority }}</td>
+                        <td class="task">{{ toDo.name }}</td>
+                        <td class="status"><button type="submit" (click)="removeToDo(i)">Done</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
