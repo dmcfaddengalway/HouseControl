@@ -62,7 +62,7 @@
 }
 
 .headerLinks ul li a {
-    cursor: crosshair;
+    cursor: pointer;
     display: table-cell;
     text-decoration: none;
     vertical-align: middle;
