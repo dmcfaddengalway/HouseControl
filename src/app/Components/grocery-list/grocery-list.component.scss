@@ -11,6 +11,10 @@
 
             form {
 
+                input {
+                    width: 40%;
+                }
+
                 select {
                     width: 20%;
                     border-radius: 2px;
@@ -19,6 +23,10 @@
                     padding: 12px 12px;
                     border: 1ps solid black;
                     font-size: 14px;
+                }
+
+                .counter {
+                    width: 5%;
                 }
             }
         }
@@ -31,8 +39,10 @@
             width: 75%;
             margin: 20px auto;
 
-            .listControlContainer, .listTableContainer {
+            .listControlContainer,
+            .listTableContainer {
                 width: 100%;
+                margin: 0 auto;
 
                 table {
                     width: 100%;
@@ -43,6 +53,8 @@
 
                         tr {
                             border-bottom: 1px solid black;
+                            font-family: 'RubikBold';
+                            font-size: 18px;
 
                             .statusHead {
                                 width: 15%;
@@ -67,7 +79,16 @@
                         tr {
                             text-align: center;
 
+                            &:nth-child(odd) {
+                                background-color: transparent;
+                            }
+
+                            &:nth-child(even) {
+                                background-color: rgba(0, 0, 0, 0.05);
+                            }
+
                             .status {
+                                margin: 0 auto;
 
                                 .checkboxWrapper {
                                     background-color: gray;
@@ -81,6 +102,7 @@
                                     visibility: hidden;
                                 }
 
+                                // "New" box for checkbox
                                 .checkboxWrapper label {
                                     width: 28px;
                                     height: 28px;
@@ -90,11 +112,12 @@
                                     background-color: white;
                                 }
 
+                                //Checkmark
                                 .checkboxWrapper label:before {
                                     content: '';
                                     width: 14px;
                                     height: 7px;
-                                    border: 2px solid black;
+                                    border: 2px solid white;
                                     position: absolute;
                                     border-top: 0;
                                     border-right: 0;
@@ -104,6 +127,7 @@
                                     opacity: 0;
                                 }
 
+                                //Show checkmark when clicked
                                 .checkboxWrapper input[type="checkbox"]:checked + label:before {
                                     opacity: 1;
                                 }
@@ -114,17 +138,6 @@
 
                             }
 
-                            .store {
-
-                            }
-
-                            .item {
-
-                            }
-
-                            .quantity {
-
-                            }
                         }
                     }
                 }

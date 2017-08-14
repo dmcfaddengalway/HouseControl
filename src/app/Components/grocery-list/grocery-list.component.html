@@ -2,10 +2,10 @@
     <div class="formContainer">
         <div class="formBox">
             <form>
-                <input type="text" placeholder="Add grocery item..." [(ngModel)]="groceryItem">
-                <select>
+                <input type="text" placeholder="Add grocery item..." [(ngModel)]="item" [ngModelOptions]="{standalone: true}" autofocus required>
+                <select [(ngModel)]="store" [ngModelOptions]="{standalone: true}">
                     <optgroup label="Grocery Stores">
-                        <option value="Aldi">Aldi</option>
+                        <option value="Aldi" ng-selected="selected">Aldi</option>
                         <option value="Dunnes">Dunnes</option>
                         <option value="Tesco">Tesco</option>
                         <option value="Lidl">Lidl</option>
@@ -18,7 +18,8 @@
                         <option value="Charity Shop">Charity Shop</option>
                     </optgroup>
                 </select>
-                <button type="submit" class="submitButtonBig">Add</button>
+                <input type="number" class="counter" value="1" min="0" max="99" step="1" [(ngModel)]="quantity" [ngModelOptions]="{standalone: true}">
+                <button type="submit" class="submitButtonBig" (click)="addGroceryItem()">Add</button>
             </form>
         </div>
 
@@ -41,17 +42,16 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr *ngFor="let item of groceryList; let i=index" class="listItem">
                                 <td class="status">
                                     <div class="checkboxWrapper">
-                                        <input type="checkbox" id="checkbox">
-                                        <label for="checkbox"></label>
+                                        <input type="checkbox" id="checkbox{{i}}">
+                                        <label for="checkbox{{i}}"></label>
                                     </div>
                                 </td>
-                                <td class="store">
-                                </td>
-                                <td class="item"></td>
-                                <td class="quanity"></td>
+                                <td class="store">{{ item.store }}</td>
+                                <td class="item">{{ item.item }}</td>
+                                <td class="quanity">{{ item.quantity }}</td>
                             </tr>
                         </tbody>
                     </table>
