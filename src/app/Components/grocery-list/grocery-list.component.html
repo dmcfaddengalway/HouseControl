@@ -1,3 +1,59 @@
-<h1>
-  grocery-list works!
-</h1>
+<div class="groceryListContainer">
+    <div class="formContainer">
+        <div class="formBox">
+            <form>
+                <input type="text" placeholder="Add grocery item..." [(ngModel)]="groceryItem">
+                <select>
+                    <optgroup label="Grocery Stores">
+                        <option value="Aldi">Aldi</option>
+                        <option value="Dunnes">Dunnes</option>
+                        <option value="Tesco">Tesco</option>
+                        <option value="Lidl">Lidl</option>
+                        <option value="SuperValu">SuperValu</option>
+                        <option value="Conveience">Aldi</option>
+                    </optgroup>
+                    <optgroup label="Home Stores">
+                        <option value="Easons">Easons</option>
+                        <option value="TKMaxx">TKMaxx</option>
+                        <option value="Charity Shop">Charity Shop</option>
+                    </optgroup>
+                </select>
+                <button type="submit" class="submitButtonBig">Add</button>
+            </form>
+        </div>
+
+        <div class="listContainer">
+            <div class="listBox">
+                <div class="listControlContainer">
+                    <div class="listBar">
+                        <button type="submit" class="submitButtonSmall">Clear</button>
+                        <button type="submit" class="submitButtonSmall">Clear All</button>
+                    </div>
+                </div>
+                <div class="listTableContainer">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td class="statusHead">Status</td>
+                                <td class="storeHead">Store</td>
+                                <td class="itemHead">Item</td>
+                                <td class="quantityHead">Quantity</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td class="store">
+                                </td>
+                                <td class="item"></td>
+                                <td class="quanity"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

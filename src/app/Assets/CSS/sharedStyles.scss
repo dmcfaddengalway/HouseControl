@@ -1,0 +1,46 @@
+.submitButtonBig {
+    width: 150px;
+    padding: 12px 30px;
+    color: white;
+    background-color: #944654;
+    border: none;
+    font-size: 20px;
+    font-family: 'TrirongThin';
+    letter-spacing: 1px;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+    border-radius: 2px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(#944654, 10%);
+    }
+}
+
+.submitButtonSmall {
+    width: 125px;
+    padding: 8px 30px;
+    color: white;
+    background-color: #944654;
+    border: none;
+    font-size: 14px;
+    font-family: 'TrirongThin';
+    letter-spacing: 1px;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+    border-radius: 2px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(#944654, 10%);
+    }
+}
+
+input {
+    padding: 20px 20px;
+    font-size: 20px;
+    border: 1ps solid black;
+    background-color: transparent;
+    width: 50%;
+    font-family: 'RubikLight';
+}

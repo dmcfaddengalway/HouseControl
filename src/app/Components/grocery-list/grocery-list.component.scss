@@ -1,0 +1,68 @@
+.groceryListContainer {
+    width: 100%;
+
+    .formContainer {
+        width: 100%;
+        margin-top: 120px;
+
+        .formBox {
+            width: 75%;
+            margin: 0 auto;
+
+            form {
+
+                select {
+                    width: 20%;
+                    border-radius: 2px;
+                    background-color: transparent;
+                    -webkit-appearance: none;
+                    padding: 12px 12px;
+                    border: 1ps solid black;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .listContainer {
+        width: 100%;
+
+        .listBox {
+            width: 75%;
+            margin: 20px auto;
+
+            .listControlContainer, .listTableContainer {
+                width: 100%;
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    text-align: center;
+
+                    thead {
+
+                        tr {
+                            border-bottom: 1px solid black;
+
+                            .statusHead {
+                                width: 15%;
+                            }
+
+                            .storeHead {
+                                width: 20%;
+                            }
+
+                            .itemHead {
+                                width: 50%;
+                            }
+
+                            .quantityHead {
+                                width: 15%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
