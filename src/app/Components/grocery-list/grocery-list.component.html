@@ -3,6 +3,7 @@
         <div class="formBox">
             <form>
                 <input type="text" placeholder="Add grocery item..." [(ngModel)]="item" [ngModelOptions]="{standalone: true}" autofocus required>
+                <input type="number" placeholder="1" class="counter" value="1" min="0" max="99" step="1" [(ngModel)]="quantity" [ngModelOptions]="{standalone: true}">
                 <select [(ngModel)]="store" [ngModelOptions]="{standalone: true}">
                     <optgroup label="Grocery Stores">
                         <option value="Aldi" ng-selected="selected">Aldi</option>
@@ -18,8 +19,7 @@
                         <option value="Charity Shop">Charity Shop</option>
                     </optgroup>
                 </select>
-                <input type="number" class="counter" value="1" min="0" max="99" step="1" [(ngModel)]="quantity" [ngModelOptions]="{standalone: true}">
-                <button type="submit" class="submitButtonBig" (click)="addGroceryItem()">Add</button>
+                <button type="submit" class="submitButtonBig" (click)="addGroceryItem()">Add Item</button>
             </form>
         </div>
 
@@ -27,8 +27,8 @@
             <div class="listBox">
                 <div class="listControlContainer">
                     <div class="listBar">
-                        <button type="submit" class="submitButtonSmall">Clear</button>
-                        <button type="submit" class="submitButtonSmall">Clear All</button>
+                        <button type="submit" class="submitButtonLong" (click)="clearSelected()">Clear Selected</button>
+                        <button type="submit" class="submitButtonLong" (click)="clearAll()">Clear All</button>
                     </div>
                 </div>
                 <div class="listTableContainer">

@@ -105,6 +105,8 @@
                 }
 
                 tbody {
+                    font-family: 'TrirongRegular';
+                    font-size: 24px;
 
                     tr {
                         border-bottom: 1px solid black;
@@ -120,14 +122,11 @@
 
                         .priority {
                             text-align: center;
-                            font-family: 'TrirongRegular';
-                            font-size: 24px;
+
                         }
 
                         .task {
                             text-align: center;
-                            font-size: 24px;
-                            font-family: 'TrirongRegular';
                         }
 
                         .status {

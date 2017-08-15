@@ -48,6 +48,7 @@
                     width: 100%;
                     border-collapse: collapse;
                     text-align: center;
+                    margin-top: 20px;
 
                     thead {
 
@@ -75,9 +76,11 @@
                     }
 
                     tbody {
+                        font-family: 'TrirongRegular';
+                        font-size: 24px;
+                        text-align: center;
 
                         tr {
-                            text-align: center;
 
                             &:nth-child(odd) {
                                 background-color: transparent;
@@ -96,6 +99,7 @@
                                     height: 30px;
                                     position: relative;
                                     border-radius: 2px;
+                                    margin: 0 auto;
                                 }
 
                                 input[type="checkbox"] {

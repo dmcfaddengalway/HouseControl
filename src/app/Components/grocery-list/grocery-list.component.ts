@@ -31,12 +31,18 @@ export class GroceryListComponent implements OnInit {
         this.quantity = null;
     }
 
-    clearList() {
-
+    clearSelected() {
+        var checkedBoxes = document.querySelectorAll("input[type=checkboxes]:checked").length;
+        console.log('Num of checked checkboses: ', checkedBoxes);
     }
 
-    clearAllList() {
-
+    clearAll() {
+        var table = document.getElementsByTagName(table);
+        var rowCount = table.rows.length;
+        while (table.rowCount.length) {
+            table.deleteRow(0);
+        }
+        console.log("List cleared!");
     }
 
 }
