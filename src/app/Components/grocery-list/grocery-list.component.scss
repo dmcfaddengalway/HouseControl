@@ -32,6 +32,16 @@
         }
     }
 
+    .listControlContainer {
+        width: 100%;
+        margin: 20px auto;
+
+        .listControlBox {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
     .listContainer {
         width: 100%;
 
@@ -39,7 +49,6 @@
             width: 75%;
             margin: 20px auto;
 
-            .listControlContainer,
             .listTableContainer {
                 width: 100%;
                 margin: 0 auto;

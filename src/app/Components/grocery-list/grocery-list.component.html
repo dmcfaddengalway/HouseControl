@@ -22,17 +22,18 @@
                 <button type="submit" class="submitButtonBig" (click)="addGroceryItem()">Add Item</button>
             </form>
         </div>
-
+        <div class="listControlContainer">
+            <div class="listControlBox">
+                <div class="listBar">
+                    <button type="submit" class="submitButtonLong" (click)="clearSelected()">Clear Selected</button>
+                    <button type="submit" class="submitButtonLong" (click)="clearAll()">Clear All</button>
+                </div>
+            </div>
+        </div>
         <div class="listContainer">
             <div class="listBox">
-                <div class="listControlContainer">
-                    <div class="listBar">
-                        <button type="submit" class="submitButtonLong" (click)="clearSelected()">Clear Selected</button>
-                        <button type="submit" class="submitButtonLong" (click)="clearAll()">Clear All</button>
-                    </div>
-                </div>
                 <div class="listTableContainer">
-                    <table>
+                    <table id="groceryTable">
                         <thead>
                             <tr>
                                 <td class="statusHead">Status</td>
