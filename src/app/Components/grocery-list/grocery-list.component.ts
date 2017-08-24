@@ -34,7 +34,7 @@ export class GroceryListComponent implements OnInit {
     clearSelected() {
         var checkedBoxes = document.getElementsByTagName('input[type="checkbox"]');
 
-        console.log('Num of checked checkboxes: ', checkedBoxes);
+        console.log('Number of checked checkboxes: ', checkedBoxes);
     }
 
     clearAll() {
