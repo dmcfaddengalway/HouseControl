@@ -6,7 +6,7 @@
                 <input type="number" placeholder="1" class="counter" value="1" min="0" max="99" step="1" [(ngModel)]="quantity" [ngModelOptions]="{standalone: true}">
                 <select [(ngModel)]="store" [ngModelOptions]="{standalone: true}">
                     <optgroup label="Grocery Stores">
-                        <option value="Aldi" ng-selected="selected">Aldi</option>
+                        <option value="Aldi" [value]="Store">Aldi</option>
                         <option value="Dunnes">Dunnes</option>
                         <option value="Tesco">Tesco</option>
                         <option value="Lidl">Lidl</option>
