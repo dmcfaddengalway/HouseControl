@@ -1,3 +1,7 @@
+# Update (Sept 01, 2017)
+
+Currently there is a deployment issue with angular cli and github pages. I am working on this issue ASAP. However screenshots of the application will be available in the screenshots folder above. Please feel free to view and the code as well.
+
 # HouseControl
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.5.
