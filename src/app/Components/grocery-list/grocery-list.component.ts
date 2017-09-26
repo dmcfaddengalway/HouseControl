@@ -13,6 +13,7 @@ export class GroceryListComponent implements OnInit {
     item: string;
     groceryList = [];
     quantity: number;
+    table;
 
     constructor() {
 
@@ -24,24 +25,25 @@ export class GroceryListComponent implements OnInit {
 
     addGroceryItem() {
         this.groceryList.push({item: this.item, store: this.store, quantity: this.quantity});
-        //console.log('Added task: ', this.task);
-        //console.log('Status: ', this.completed);
-        //console.log('Priority:', this.priority);
+        // console.log('Added task: ', this.task);
+        // console.log('Status: ', this.completed);
+        // console.log('Priority:', this.priority);
         this.item = '';
         this.quantity = null;
     }
 
     clearSelected() {
-        var checkedBoxes = document.getElementsByTagName('input[type="checkbox"]');
+        const checkedBoxes = document.getElementsByTagName('input[type="checkbox"]');
 
         console.log('Number of checked checkboxes: ', checkedBoxes);
     }
 
     clearAll() {
-        var table = document.getElementsByTagName(table);
-        var rowCount = table.rows.length;
-        while (table.rowCount.length) {
-            table.deleteRow(0);
+        const tableDisplay = document.getElementsByTagName(this.table);
+        const rowCount = tableDisplay.rows.length;
+
+        while (tableDisplay.rowCount.length) {
+            tableDisplay.deleteRow(0);
         }
         console.log("List cleared!");
     }
