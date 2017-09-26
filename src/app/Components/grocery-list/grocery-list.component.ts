@@ -29,6 +29,7 @@ export class GroceryListComponent implements OnInit {
         // console.log('Status: ', this.completed);
         // console.log('Priority:', this.priority);
         this.item = '';
+        this.store = '';
         this.quantity = null;
     }
 
@@ -39,13 +40,7 @@ export class GroceryListComponent implements OnInit {
     }
 
     clearAll() {
-        const tableDisplay = document.getElementsByTagName(this.table);
-        const rowCount = tableDisplay.rows.length;
-
-        while (tableDisplay.rowCount.length) {
-            tableDisplay.deleteRow(0);
-        }
-        console.log("List cleared!");
+        this.groceryList = [];
     }
 
 }
