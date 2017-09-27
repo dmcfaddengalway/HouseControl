@@ -4,20 +4,13 @@
             <form>
                 <input type="text" placeholder="Add grocery item..." [(ngModel)]="item" [ngModelOptions]="{standalone: true}" autofocus required>
                 <input type="number" placeholder="1" class="counter" value="1" min="0" max="99" step="1" [(ngModel)]="quantity" [ngModelOptions]="{standalone: true}">
-                <select [(ngModel)]="store" [ngModelOptions]="{standalone: true}">
-                    <optgroup label="Grocery Stores">
-                        <option value="Aldi" [value]="Store">Aldi</option>
-                        <option value="Dunnes">Dunnes</option>
-                        <option value="Tesco">Tesco</option>
-                        <option value="Lidl">Lidl</option>
-                        <option value="SuperValu">SuperValu</option>
-                        <option value="Conveience">Aldi</option>
-                    </optgroup>
-                    <optgroup label="Home Stores">
-                        <option value="Easons">Easons</option>
-                        <option value="TKMaxx">TKMaxx</option>
-                        <option value="Charity Shop">Charity Shop</option>
-                    </optgroup>
+                <select [(ngModel)]="store" [ngModelOptions]="{standalone: true}" placeholder="Store">
+                    <option value="Aldi">Aldi</option>
+                    <option value="Dunnes">Dunnes</option>
+                    <option value="Tesco">Tesco</option>
+                    <option value="Lidl">Lidl</option>
+                    <option value="SuperValu">SuperValu</option>
+                    <option value="Conveience">Aldi</option>
                 </select>
                 <button type="submit" class="submitButtonBig" (click)="addGroceryItem()">Add Item</button>
             </form>

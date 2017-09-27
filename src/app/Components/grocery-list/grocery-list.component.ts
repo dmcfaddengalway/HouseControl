@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class GroceryListComponent implements OnInit {
 
     store: string;
-    storeList = ['Aldi', 'Dunnes', 'Tesco', 'Lidl', 'SuperValu', 'Convenience', 'Easons', 'TKMaxx', 'Charity Shop'];
+    storeList = ['Aldi', 'Dunnes', 'Tesco', 'Lidl', 'SuperValu'];
     item: string;
     groceryList = [];
     quantity: number;
@@ -29,7 +29,7 @@ export class GroceryListComponent implements OnInit {
         // console.log('Status: ', this.completed);
         // console.log('Priority:', this.priority);
         this.item = '';
-        this.store = '';
+        this.store = this.storeList[0];
         this.quantity = null;
     }
 
