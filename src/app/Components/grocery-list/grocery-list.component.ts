@@ -34,8 +34,13 @@ export class GroceryListComponent implements OnInit {
         // console.log('Status: ', this.completed);
         // console.log('Priority:', this.priority);
         this.item = '';
+<<<<<<< HEAD
         this.store = this.storeList[0];
         this.quantity = 1;
+=======
+        this.store = '';
+        this.quantity = null;
+>>>>>>> made use of clear all button
     }
 
     clearSelected() {
