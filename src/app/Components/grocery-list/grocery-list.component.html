@@ -4,7 +4,7 @@
             <form>
                 <input type="text" placeholder="Add grocery item..." [(ngModel)]="item" [ngModelOptions]="{standalone: true}" autofocus required>
                 <input type="number" placeholder="1" class="counter" value="1" min="0" max="99" step="1" [(ngModel)]="quantity" [ngModelOptions]="{standalone: true}">
-                <select [(ngModel)]="store" [ngModelOptions]="{standalone: true}" placeholder="Store">
+                <select [(ngModel)]="store" [ngModelOptions]="{standalone: true}">
                     <option value="Aldi">Aldi</option>
                     <option value="Dunnes">Dunnes</option>
                     <option value="Tesco">Tesco</option>
