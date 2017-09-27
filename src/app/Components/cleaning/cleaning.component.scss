@@ -1,0 +1,32 @@
+.cleaningContainer {
+    width: 100%;
+
+    .cleaningBox {
+        width: 75%;
+        margin: 120px auto;
+        font-family: 'TrirongLight';
+    }
+
+    h1 {
+        display: inline-block;
+    }
+
+    button {
+        display: inline-block;
+        float: right;
+    }
+
+    .dailyBox {
+        border-bottom: 1px solid black;
+    }
+
+    .weeklyBox {
+        border-bottom: 1px solid black;
+    }
+
+    .monthlyBox {
+        border-bottom: 1px solid black;
+    }
+
+}
+
