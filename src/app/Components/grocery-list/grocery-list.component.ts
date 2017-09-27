@@ -12,7 +12,7 @@ export class GroceryListComponent implements OnInit {
     storeList = ['Aldi', 'Dunnes', 'Tesco', 'Lidl', 'SuperValu'];
     item: string;
     groceryList = [];
-    quantity: number;
+    quantity = 1;
     table;
 
     constructor() {
@@ -24,13 +24,19 @@ export class GroceryListComponent implements OnInit {
     }
 
     addGroceryItem() {
-        this.groceryList.push({item: this.item, store: this.store, quantity: this.quantity});
+
+        if (this.quantity > 0 || this.store == null) {
+            this.groceryList.push({item: this.item, store: this.store, quantity: this.quantity});
+        } else {
+            alert("Sorry you can not order 0 of " + this.item);
+            return;
+        }
         // console.log('Added task: ', this.task);
         // console.log('Status: ', this.completed);
         // console.log('Priority:', this.priority);
         this.item = '';
         this.store = this.storeList[0];
-        this.quantity = null;
+        this.quantity = 1;
     }
 
     clearSelected() {
