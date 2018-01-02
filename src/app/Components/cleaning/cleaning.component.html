@@ -3,7 +3,14 @@
 
         <div class="dailyBox">
             <h1>Daily Tasks</h1>
-            <button class="submitButtonBig">Add Task</button>
+            <button class="submitButtonBig" (click)="showPopUp('modal-adding')">Add Task</button>
+            <table>
+                <tr *ngFor="let task of taskList; let i=index" class="taskList">
+                    <td>{{ i }}</td>
+                    <td>{{ task.name }}</td>
+                    <td class="status"><button type="submit" (click)="removeToDo(i)">Done</button></td>
+                </tr>
+            </table>
         </div>
 
         <div class="weeklyBox">

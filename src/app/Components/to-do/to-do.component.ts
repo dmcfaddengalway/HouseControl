@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './to-do.component.html',
   styleUrls: ['./to-do.component.scss', '../../Assets/CSS/_variables.scss']
 })
+
 export class ToDoComponent implements OnInit {
 
     task: string;

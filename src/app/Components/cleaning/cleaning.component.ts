@@ -5,11 +5,21 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './cleaning.component.html',
   styleUrls: ['./cleaning.component.scss', '../../Assets/CSS/sharedStyles.scss']
 })
+
 export class CleaningComponent implements OnInit {
 
-  constructor() { }
+    task: string;
+    taskList = [];
 
-  ngOnInit() {
-  }
+    constructor() { }
 
+    ngOnInit() {
+
+    }
+
+    addToList() {
+        if(this.task != null) {
+            this.taskList.push({name: this.task});
+        }
+    }
 }
