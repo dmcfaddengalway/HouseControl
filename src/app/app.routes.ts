@@ -32,5 +32,9 @@ export const routes: Routes = [
     {
         path: 'terms',
         component: TermsComponent
+    },
+    {
+        path: 'copyright',
+        component: CopyrightComponent
     }
 ];

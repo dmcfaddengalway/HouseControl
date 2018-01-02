@@ -13,7 +13,6 @@ export class GroceryListComponent implements OnInit {
     item: string;
     groceryList = [];
     quantity = 1;
-    table;
 
     constructor() {
 
