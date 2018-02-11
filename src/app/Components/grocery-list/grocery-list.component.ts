@@ -29,18 +29,24 @@ export class GroceryListComponent implements OnInit {
             alert("Sorry you can not order 0 of " + this.item);
             return;
         }
-        // console.log('Added task: ', this.task);
-        // console.log('Status: ', this.completed);
-        // console.log('Priority:', this.priority);
+        // console.log('Added task: ', this.item);
+        // console.log('Store: ', this.store);
+        // console.log('Quantity:', this.quantity);
         this.item = '';
         this.store = this.storeList[0];
         this.quantity = 1;
     }
 
     clearSelected() {
-        const checkedBoxes = document.getElementsByTagName('input[type="checkbox"]');
+        const checkedBoxes = Array.prototype.slice.call(document.querySelectorAll('input[type="checkbox"]:checked'));
 
-        console.log('Number of checked checkboxes: ', checkedBoxes);
+        for(var i = checkedBoxes.length; i >= 0; i--) {
+            console.log('Number of checked checkboxes: ', checkedBoxes.length);
+            checkedBoxes.toString().split(",");
+            checkedBoxes.splice(i, -1);
+        }
+
+
     }
 
     clearAll() {
