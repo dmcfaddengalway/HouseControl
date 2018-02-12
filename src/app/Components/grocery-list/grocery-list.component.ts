@@ -19,7 +19,7 @@ export class GroceryListComponent implements OnInit {
     }
 
     ngOnInit() {
-
+        this.store = this.storeList[0];
     }
 
     addGroceryItem() {
@@ -41,7 +41,7 @@ export class GroceryListComponent implements OnInit {
         const checkedBoxes = Array.prototype.slice.call(document.querySelectorAll('input[type="checkbox"]:checked'));
 
         console.log(checkedBoxes);
-        for(var i = 0; i <= checkedBoxes.length; i++) {
+        for(var i = checkedBoxes.length; i >= 0; i--) {
             this.groceryList.splice(i, 1);
         }
 
