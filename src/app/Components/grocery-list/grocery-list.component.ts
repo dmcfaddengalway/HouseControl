@@ -41,7 +41,7 @@ export class GroceryListComponent implements OnInit {
         const checkedBoxes = Array.prototype.slice.call(document.querySelectorAll('input[type="checkbox"]:checked'));
 
         console.log(checkedBoxes);
-        for(var i = checkedBoxes.length; i >= 0; i--) {
+        for(var i = 0; i <= checkedBoxes.length; i++) {
             this.groceryList.splice(i, 1);
         }
 
