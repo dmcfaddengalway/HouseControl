@@ -38,20 +38,12 @@ export class GroceryListComponent implements OnInit {
     }
 
     clearSelected() {
-        const checkedBoxes = Array.slice.call(document.querySelectorAll('input[type="checkbox"]'));
+        const checkedBoxes = Array.prototype.slice.call(document.querySelectorAll('input[type="checkbox"]:checked'));
 
-        for(var i = 0; i< checkedBoxes.length; i++) {
-            if(checkedBoxes[i].getAttribute('input[type="checkbox"]:checked')) {
-                checkedBoxes.delete(i);
-            }
+        console.log(checkedBoxes);
+        for(var i = 0; i <= checkedBoxes.length; i++) {
+            this.groceryList.splice(i, 1);
         }
-
-//        for(var i = checkedBoxes.length; i >= 0; i--) {
-//            console.log('Number of checked checkboxes: ', checkedBoxes.length);
-//            checkedBoxes.toString().split(",");
-//            checkedBoxes.splice(i, -1);
-//        }
-
 
     }
 
