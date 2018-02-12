@@ -36,9 +36,10 @@ module.exports = function (config) {
               : ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
-    logLevel: config.LOG_INFO,
+    logLevel: config.LOG_DEBUG,
     autoWatch: true,
-    browsers: ['Chrome', 'Safari'],
+    browsers: ['PhantomJS'],
+    captureTimeout: 60000,
     singleRun: false
   });
 };
