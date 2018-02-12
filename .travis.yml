@@ -1,16 +1,7 @@
 language: node_js
 node_js: stable
 
-before_install:
-- npm install n
-- sudo ./node_modules/.bin/n stable
-- rm -rf ~/.nvm
-
 branches:
   only:
     - gh-pages
     - /.*/
-
-sudo: required
-addons:
-  chrome: stable
