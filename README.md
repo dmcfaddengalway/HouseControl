@@ -1,5 +1,5 @@
-#NgTrafficCI
-![Build](https://travis-ci.org/dmcfaddengalway/HouseControl.svg?branch=master)
+# Build Status (Netlify)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6ea41aee-42a8-461d-bbfa-2663da822105/deploy-status)](https://app.netlify.com/sites/gallant-brattain-7a706f/deploys)
 
 # Update (November 11, 2017)
 
